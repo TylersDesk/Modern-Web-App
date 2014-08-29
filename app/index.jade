@@ -44,8 +44,27 @@ html(class="no-js", lang="en")
 
                     
             div.centercolumn
+                div.actionbar
+                    div.searchbar
+                        form
+                            div.row
+                                div.large-12.columns
+                                    div.row.collapse
+                                        div.small-10.columns
+                                            input(type="text",placeholder="Search")
+                                        div.small-2.columns
+                                            a.button.postfix 
+                                                i.fa.fa-search
+                    div.alerts 
+                        div.card.green 
+                            i.fa.fa-comments-o
+                        div.card.blue
+                            i.fa.fa-user
+                        div.card.red 
+                            i.fa.fa-institution
 
-            div.rightcolumn
-
+                    div.user
+                        div.profilepic Mr. Maynard
+                            img(src="images/myAvatar.png")
            
         include footer
