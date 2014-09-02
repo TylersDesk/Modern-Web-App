@@ -5,45 +5,55 @@ html(class="no-js", lang="en")
     body    
         div.flex-container
             div.leftcolumn
-                div.logo 
-                    img(src="images/zions-bank-white.png")
-                div.menu-title Menu
-                ul.menu-items
-                    li 
-                        i.class.fa.fa-male
-                        span.item Personal
-                    li 
-                        i.fa.fa-fax
-                        span.item Business
-                    li 
-                        i.fa.fa-dollar
-                        span.item Treasury Management
-                    li 
-                        i.fa.fa-university
-                        span.item About Zions Bank
+                div.logo
+                        img(src="images/zions-bank-white.png")
+                
+                div.menu
+                    div.menu-title Menu
+                    ul.menu-items
+                        li 
+                            i.class.fa.fa-male
+                            span.item Personal
+                        li 
+                            i.fa.fa-fax
+                            span.item Business
+                        li 
+                            i.fa.fa-dollar
+                            span.item Treasury Management
+                        li 
+                            i.fa.fa-university
+                            span.item About Zions Bank
 
-                div.menu-title.menu-padding Locations
-                ul.menu-items
-                    li 
-                        i.class.fa.fa-location-arrow
-                        span.item Closest Branch
-                    li 
-                        i.fa.fa-map-marker
-                        span.item Locate ATM
-                    li 
-                        i.fa.fa-dollar
-                        span.item Treasury Management
+                    div.menu-title.menu-padding Locations
+                    ul.menu-items
+                        li 
+                            i.class.fa.fa-location-arrow
+                            span.item Closest Branch
+                        li 
+                            i.fa.fa-map-marker
+                            span.item Locate ATM
+                        li 
+                            i.fa.fa-dollar
+                            span.item Treasury Management
 
 
-                div.menu-title.menu-padding Chat 
-                ul.menu-items
-                    li 
-                        i.class.fa.fa-comments-o
-                        span.item Chat Now
-                    
+                    div.menu-title.menu-padding Chat 
+                    ul.menu-items
+                        li 
+                            i.class.fa.fa-comments-o
+                            span.item Chat Now
 
-                    
             div.centercolumn
+                div.babymenu
+                    div.babyitem
+                        i.class.fa.fa-male
+                    div.babyitem
+                        i.fa.fa-fax
+                    div.babyitem
+                        i.fa.fa-dollar
+                    div.babyitem
+                        i.fa.fa-university
+
                 div.actionbar
                     div.searchbar
                         form
@@ -64,7 +74,32 @@ html(class="no-js", lang="en")
                             i.fa.fa-institution
 
                     div.user
-                        div.profilepic Mr. Maynard
+                        div.profilepic 
+                            span.name Mr. Maynard
                             img(src="images/myAvatar.png")
+
+                div.content
+                    .login-block
+                        h1 ZionsBank.com Login
+
+                        form
+                            div.row
+                                div.large-12.columns
+                                    div.row
+                                        div.small-12.columns
+                                            input(type="text",placeholder="Username")
+                                    div.row.collapse
+                                        div.small-10.columns
+                                            input(type="text",placeholder="Password")
+                                        div.small-2.columns
+                                            a.button.postfix Go
+
+                    .login-block 
+                        h1 Latest Banking News
+                        ul
+                            li Rates have increased.
+                            li Some randow news items.
+                            li Need to refinance?
+                                            
            
         include footer
