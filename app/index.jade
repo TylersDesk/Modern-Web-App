@@ -1,8 +1,8 @@
 doctype html
-html(class="no-js", lang="en")
+html(class="no-js", lang="en", ng-app="modernWebApp")
     include header
 
-    body    
+    body
         div.flex-container
             div.leftcolumn
                 div.logo
@@ -10,19 +10,10 @@ html(class="no-js", lang="en")
                 
                 div.menu
                     div.menu-title Menu
-                    ul.menu-items
-                        li 
-                            i.class.fa.fa-male
-                            span.item Personal
-                        li 
-                            i.fa.fa-fax
-                            span.item Business
-                        li 
-                            i.fa.fa-dollar
-                            span.item Treasury Management
-                        li 
-                            i.fa.fa-university
-                            span.item About Zions Bank
+                    ul.menu-items(ng-controller="menuListCtrl")
+                        li(ng-repeat="navItem in mainNav")
+                            i(class="{{'fa ' + navItem.icon}}")
+                            span.item {{navItem.name}}
 
                     div.menu-title.menu-padding Locations
                     ul.menu-items

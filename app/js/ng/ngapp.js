@@ -1,0 +1,1 @@
+var modernWebApp = angular.module('modernWebApp', []);
